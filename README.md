@@ -1,1 +1,16 @@
-# vercel.config
+{
+  "version": 2,
+  "name": "full stack",
+  "builds": [
+    {
+      "src": "./index.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/"
+    }
+  ]
+}
